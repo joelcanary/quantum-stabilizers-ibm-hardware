@@ -56,6 +56,16 @@ Three findings, each at its measured size:
    circuit's 6.8 µs (`T1 ≈ 230–290 µs`), which a product-of-error-rates model does not
    contain.
 
+![the argument in one picture](figures/story.png)
+
+![anatomy of the error](figures/error_anatomy.png)
+
+The second infographic is the part the summary numbers hide: **almost every error is a
+single bit flip** (2-flip events are ≤ 2 %, 3-flip ≤ 1 %), and in the default placement the
+flips concentrate on the last-measured positions, which is what one expects if idle time
+before readout matters; on the control chain the flip rate is flat and low across all three
+positions.
+
 ![GHZ on hardware](figures/ghz_hardware.png)
 ![cluster state on hardware](figures/cluster_hardware.png)
 
@@ -99,6 +109,7 @@ python experiments/cluster_state_hardware_real.py       # ... and of the cluster
 python experiments/entrelazamiento_saturacion_clifford.py   # ~6 min: the saturation scaling
 python scripts/export_hardware_data.py                  # regenerates data/hardware from the scripts
 python scripts/make_figures.py                          # the figures, with their internal checks
+python scripts/make_infographics.py                     # the two infographics, read from data/hardware
 ```
 
 Re-running on hardware needs an IBM Quantum account; the circuits are `ghz_state(n)` and

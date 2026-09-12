@@ -22,3 +22,4 @@ jobs:
           python scripts/export_hardware_data.py
           git diff --exit-code -- data/hardware
       - run: python scripts/make_figures.py
+      - run: python scripts/make_infographics.py
