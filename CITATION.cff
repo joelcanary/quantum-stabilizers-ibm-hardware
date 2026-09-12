@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or these hardware records, please cite this repository."
+title: "Exact stabilizer toolkit (GF(2) entanglement entropy and code distance) with real IBM Quantum data"
+authors:
+  - family-names: "Cruz Cabrera"
+    given-names: "Joel"
+    orcid: "https://orcid.org/0009-0005-4048-1237"
+year: 2026
+license: Apache-2.0
+repository-code: "https://github.com/joelcanary/stabilizer-exact"
+keywords:
+  - stabilizer formalism
+  - entanglement entropy
+  - quantum error correction
+  - code distance
+  - Gottesman-Knill
+  - IBM Quantum
+  - exact computation

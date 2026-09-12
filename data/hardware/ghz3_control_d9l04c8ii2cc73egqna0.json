@@ -1,0 +1,49 @@
+{
+ "backend": "ibm_kingston",
+ "circuit": "GHZ(3) control on low-error qubits",
+ "circuit_duration_us": 6.836,
+ "counts": {
+  "000": 2018,
+  "001": 12,
+  "010": 6,
+  "011": 38,
+  "100": 32,
+  "101": 28,
+  "110": 47,
+  "111": 1915
+ },
+ "date": "2026-07-29",
+ "exact_prediction": {
+  "P(000)": "1/2",
+  "P(111)": "1/2",
+  "P(other)": "0"
+ },
+ "job_id": "d9l04c8ii2cc73egqna0",
+ "measured": {
+  "P(000)+P(111)": "3933/4096",
+  "P(000)+P(111)_float": 0.960205078125,
+  "leak": 0.039794921875
+ },
+ "n_qubits": 3,
+ "naive_noise_model_prediction": 0.9853,
+ "note": "raw counts as returned by the backend; historical, not reproducible on demand",
+ "physical_qubits": [
+  118,
+  129,
+  128
+ ],
+ "qubit_properties_published_by_IBM": {
+  "T1_us": {
+   "118": 287.6,
+   "128": 230.0,
+   "129": 247.7
+  },
+  "T2_us": {
+   "118": 153.0,
+   "128": 63.3,
+   "129": 137.2
+  }
+ },
+ "runtime": "Qiskit Runtime SamplerV2",
+ "shots": 4096
+}

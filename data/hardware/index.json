@@ -1,0 +1,78 @@
+{
+ "backend": "ibm_kingston",
+ "date": "2026-07-29",
+ "jobs": [
+  {
+   "file": "ghz3_d9kuc78ii2cc73egnv4g.json",
+   "job_id": "d9kuc78ii2cc73egnv4g",
+   "circuit": "GHZ(3)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz3_d9kukujhdfks73ck7g0g.json",
+   "job_id": "d9kukujhdfks73ck7g0g",
+   "circuit": "GHZ(3)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz3_d9kul9bjf64c739iolog.json",
+   "job_id": "d9kul9bjf64c739iolog",
+   "circuit": "GHZ(3)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz4_d9kumsqbr2fc73e7tsvg.json",
+   "job_id": "d9kumsqbr2fc73e7tsvg",
+   "circuit": "GHZ(4)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz5_d9kuolabr2fc73e7tvf0.json",
+   "job_id": "d9kuolabr2fc73e7tvf0",
+   "circuit": "GHZ(5)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz6_d9kv0tibr2fc73e7udjg.json",
+   "job_id": "d9kv0tibr2fc73e7udjg",
+   "circuit": "GHZ(6)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz7_d9kv4ojjf64c739ipdgg.json",
+   "job_id": "d9kv4ojjf64c739ipdgg",
+   "circuit": "GHZ(7)",
+   "shots": 4096
+  },
+  {
+   "file": "ghz3_control_d9l04c8ii2cc73egqna0.json",
+   "job_id": "d9l04c8ii2cc73egqna0",
+   "circuit": "GHZ(3) control on low-error qubits",
+   "shots": 4096
+  },
+  {
+   "file": "cluster4_K0_d9kveiibr2fc73e7v8k0.json",
+   "job_id": "d9kveiibr2fc73e7v8k0",
+   "circuit": "1D cluster state, n=4, stabilizer generator K_0 measured",
+   "shots": 4096
+  },
+  {
+   "file": "cluster4_K1_d9kvfcibr2fc73e7vacg.json",
+   "job_id": "d9kvfcibr2fc73e7vacg",
+   "circuit": "1D cluster state, n=4, stabilizer generator K_1 measured",
+   "shots": 4096
+  },
+  {
+   "file": "cluster4_K2_d9kvgr0ii2cc73egprug.json",
+   "job_id": "d9kvgr0ii2cc73egprug",
+   "circuit": "1D cluster state, n=4, stabilizer generator K_2 measured",
+   "shots": 4096
+  },
+  {
+   "file": "cluster4_K3_d9kvhg0ii2cc73egpsvg.json",
+   "job_id": "d9kvhg0ii2cc73egpsvg",
+   "circuit": "1D cluster state, n=4, stabilizer generator K_3 measured",
+   "shots": 4096
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "Q2-distancia-codigo-estabilizador",
+  "problema": "hodge",
+  "nivel": "V",
+  "enunciado": "EXTENSION de la herramienta de estabilizadores cuanticos (Q1-entropia-estabilizador-exacta): distancia EXACTA de codigos correctores de errores cuanticos, symbolica/plugins/estabilizador_cuantico.py::distancia_codigo_estabilizador. La entropia de entrelazamiento usaba el Clifford de Qiskit (apropiado para ESTADOS, k=0 logico); un codigo [[n,k,d]] con k>0 qubits logicos necesita generadores explicitos y sus operadores logicos -- implementado aqui como geometria simplectica GF(2) DIRECTA, sin pasar por Qiskit en absoluto (ni siquiera como oraculo de contraste esta vez, ya que Qiskit no expone codigos con k>0 de forma nativa).\n\nMETODO: d = peso minimo de un operador de Pauli que conmuta con todos los generadores del estabilizador pero no es producto de generadores (operador logico no trivial). Busqueda exhaustiva por peso creciente sobre el grupo de Pauli (formalismo estandar, Gottesman 1997 / Nielsen-Chuang cap. 10), con pertenencia al span verificada por eliminacion Gaussiana GF(2) pura.\n\nVERIFICADO contra TRES codigos canonicos de la literatura (implementados independientemente aqui, no copiados de ninguna libreria): Steane [[7,1,3]] (CSS sobre el codigo de Hamming [7,4,3]), el codigo perfecto de 5 qubits [[5,1,3]] (rotaciones ciclicas de XZZXI), y el codigo de Shor [[9,1,3]] (bit-flip + phase-flip concatenados). Los tres dan d=3 exacto, coincidiendo con sus distancias publicadas.\n\nALCANCE HONESTO: estas son distancias YA CONOCIDAS (no un descubrimiento), la verificacion confirma que la implementacion GF(2) es correcta -- util como herramienta reutilizable para calcular distancias de codigos NUEVOS (no solo verificar los clasicos), pero no es en si mismo un resultado nuevo de teoria de codigos.",
+  "evidencia": "python symbolica/plugins/estabilizador_cuantico.py  |  python -m unittest tests.test_estabilizador_cuantico",
+  "rango": "3 codigos canonicos: Steane [[7,1,3]], 5 qubits [[5,1,3]], Shor [[9,1,3]]",
+  "hipotesis": "Se puede calcular la distancia de un codigo estabilizador arbitrario por busqueda exhaustiva GF(2), sin ninguna dependencia de amplitudes de punto flotante?",
+  "relacionado": [
+    "Q1-entropia-estabilizador-exacta"
+  ],
+  "fecha": "2026-07-27"
+}

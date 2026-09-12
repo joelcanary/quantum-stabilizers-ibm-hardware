@@ -1,0 +1,41 @@
+{
+ "backend": "ibm_kingston",
+ "circuit": "1D cluster state, n=4, stabilizer generator K_0 measured",
+ "counts": {
+  "0000": 559,
+  "0001": 60,
+  "0010": 29,
+  "0011": 529,
+  "0100": 469,
+  "0101": 66,
+  "0110": 25,
+  "0111": 472,
+  "1000": 436,
+  "1001": 56,
+  "1010": 22,
+  "1011": 419,
+  "1100": 467,
+  "1101": 55,
+  "1110": 20,
+  "1111": 412
+ },
+ "date": "2026-07-29",
+ "exact_prediction": {
+  "<K_0>": 1
+ },
+ "generator": 0,
+ "generator_support": {
+  "0": "X",
+  "1": "Z"
+ },
+ "job_id": "d9kveiibr2fc73e7v8k0",
+ "measured": {
+  "<K>": "1715/2048",
+  "<K>_float": 0.83740234375
+ },
+ "n_qubits": 4,
+ "note": "raw counts as returned by the backend; historical, not reproducible on demand",
+ "runtime": "Qiskit Runtime SamplerV2",
+ "shots": 4096,
+ "touches_miscalibrated_qubit": true
+}

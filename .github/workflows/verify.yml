@@ -1,0 +1,24 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests-and-figures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install qiskit numpy matplotlib pytest
+      - run: python -m pytest -q tests
+      - run: python experiments/ghz_hardware_real.py
+      - run: python experiments/cluster_state_hardware_real.py
+      - name: hardware records regenerate identically from the scripts
+        run: |
+          python scripts/export_hardware_data.py
+          git diff --exit-code -- data/hardware
+      - run: python scripts/make_figures.py

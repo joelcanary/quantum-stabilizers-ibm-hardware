@@ -1,0 +1,30 @@
+{
+ "backend": "ibm_kingston",
+ "circuit": "GHZ(3)",
+ "counts": {
+  "000": 1975,
+  "001": 87,
+  "011": 34,
+  "100": 18,
+  "101": 75,
+  "110": 15,
+  "111": 1892
+ },
+ "date": "2026-07-29",
+ "exact_prediction": {
+  "P(0^n)": "1/2",
+  "P(1^n)": "1/2",
+  "P(other)": "0"
+ },
+ "job_id": "d9kuc78ii2cc73egnv4g",
+ "measured": {
+  "P(0^n)+P(1^n)": "3867/4096",
+  "P(0^n)+P(1^n)_float": 0.944091796875,
+  "leak": 0.055908203125
+ },
+ "n_qubits": 3,
+ "naive_noise_model_prediction": 0.7337,
+ "note": "raw counts as returned by the backend; historical, not reproducible on demand",
+ "runtime": "Qiskit Runtime SamplerV2",
+ "shots": 4096
+}
