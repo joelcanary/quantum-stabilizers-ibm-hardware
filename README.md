@@ -1,4 +1,6 @@
-# Exact stabilizer toolkit, with real IBM Quantum data
+# Exact quantum results, with real IBM data
+
+![Exact stabilizer results and real IBM Quantum data](figures/social-preview.png)
 
 Exact — integer, no floating point anywhere — computation of two textbook quantities of the
 stabilizer formalism, verified against independent oracles and against three canonical
