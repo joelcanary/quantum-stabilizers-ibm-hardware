@@ -24,7 +24,10 @@ index = []
 
 def escribe(nombre, doc):
     ruta = os.path.join(OUT, nombre + ".json")
-    json.dump(doc, open(ruta, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    # newline="\n": the CI regenerates these files on Linux and diffs them, so the bytes
+    # must not depend on the platform that wrote them
+    with open(ruta, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(doc, f, indent=1, sort_keys=True)
     index.append({"file": nombre + ".json", "job_id": doc["job_id"], "circuit": doc["circuit"], "shots": doc["shots"]})
 
 
@@ -59,5 +62,6 @@ for e in C.EXPERIMENTOS_REALES:
         measured={"<K>": str(ev) if isinstance(ev, Fraction) else ev, "<K>_float": float(ev)},
         touches_miscalibrated_qubit=C.involucra_qubit(e["generator"], C.N, C.QUBIT_FISICO_MALO)))
 
-json.dump({"backend": "ibm_kingston", "date": "2026-07-29", "jobs": index}, open(os.path.join(OUT, "index.json"), "w"), indent=1)
+with open(os.path.join(OUT, "index.json"), "w", encoding="utf-8", newline="\n") as f:
+    json.dump({"backend": "ibm_kingston", "date": "2026-07-29", "jobs": index}, f, indent=1)
 print("exported %d job records to %s" % (len(index), OUT))
