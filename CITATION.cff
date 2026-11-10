@@ -7,7 +7,7 @@ authors:
     orcid: "https://orcid.org/0009-0005-4048-1237"
 year: 2026
 license: Apache-2.0
-repository-code: "https://github.com/joelcanary/stabilizer-exact"
+repository-code: "https://github.com/joelcanary/quantum-stabilizers-ibm-hardware"
 keywords:
   - stabilizer formalism
   - entanglement entropy

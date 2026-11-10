@@ -144,7 +144,7 @@ never as the reported value) on:
 \item The Bell pair $(\ket{00}+\ket{11})/\sqrt2$: $S_{\{0\}} = 1$.
 \item The GHZ state on $n$ qubits, cut at a single qubit: $S_{\{0\}} =
   1$ for $n = 2,3,5,8$.
-\item The one-dimensional cluster (graph) state on $n$ qubits: $S_A = 1$
+\item The one-dimensional cluster (graph) state~\cite{Briegel2001} on $n$ qubits: $S_A = 1$
   for \emph{every} bulk cut, for $n = 4, 6, 8$ --- the area-law
   signature expected of this state.
 \item Thirty random Clifford circuits ($n=5$ qubits, 20 random gates
@@ -186,9 +186,9 @@ any coding-theory library) and computed their distance:
 \begin{tabular}{lccc}
 Code & $[[n,k,d]]$ published & $d$ computed & Match \\
 \hline
-Steane (CSS on Hamming $[7,4,3]$) & $[[7,1,3]]$ & 3 & Yes \\
-5-qubit perfect code & $[[5,1,3]]$ & 3 & Yes \\
-Shor's code & $[[9,1,3]]$ & 3 & Yes \\
+Steane~\cite{Steane1996} (CSS on Hamming $[7,4,3]$) & $[[7,1,3]]$ & 3 & Yes \\
+5-qubit perfect code~\cite{Laflamme1996,Bennett1996} & $[[5,1,3]]$ & 3 & Yes \\
+Shor's code~\cite{Shor1995} & $[[9,1,3]]$ & 3 & Yes \\
 \end{tabular}
 \end{center}
 
@@ -485,7 +485,7 @@ though the two independently point to the same qualitative conclusion,
 that individual qubit miscalibration dominates over circuit size in the
 regime we tested.
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 
 \bibitem{Fattal2004}
 D.~Fattal, T.~S.~Cubitt, Y.~Yamamoto, S.~Bravyi, and I.~L.~Chuang,
@@ -502,6 +502,36 @@ Ph.D.\ thesis, California Institute of Technology, 1997.
 M.~A.~Nielsen and I.~L.~Chuang,
 \textit{Quantum Computation and Quantum Information},
 Cambridge University Press, 2000. Chapter 10.
+
+\bibitem{Shor1995}
+P.~W.~Shor,
+Scheme for reducing decoherence in quantum computer memory,
+\textit{Phys.\ Rev.\ A} \textbf{52}, R2493--R2496 (1995).
+doi:10.1103/PhysRevA.52.R2493.
+
+\bibitem{Steane1996}
+A.~M.~Steane,
+Error correcting codes in quantum theory,
+\textit{Phys.\ Rev.\ Lett.} \textbf{77}, 793--797 (1996).
+doi:10.1103/PhysRevLett.77.793.
+
+\bibitem{Laflamme1996}
+R.~Laflamme, C.~Miquel, J.~P.~Paz, and W.~H.~Zurek,
+Perfect quantum error correcting code,
+\textit{Phys.\ Rev.\ Lett.} \textbf{77}, 198--201 (1996).
+doi:10.1103/PhysRevLett.77.198.
+
+\bibitem{Bennett1996}
+C.~H.~Bennett, D.~P.~DiVincenzo, J.~A.~Smolin, and W.~K.~Wootters,
+Mixed-state entanglement and quantum error correction,
+\textit{Phys.\ Rev.\ A} \textbf{54}, 3824--3851 (1996).
+doi:10.1103/PhysRevA.54.3824.
+
+\bibitem{Briegel2001}
+H.~J.~Briegel and R.~Raussendorf,
+Persistent entanglement in arrays of interacting particles,
+\textit{Phys.\ Rev.\ Lett.} \textbf{86}, 910--913 (2001).
+doi:10.1103/PhysRevLett.86.910.
 
 \end{thebibliography}
 

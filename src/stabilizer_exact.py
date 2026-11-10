@@ -17,8 +17,8 @@ continuas. Este es el contenido real del teorema de Gottesman-Knill.
 
 OBSERVABLE EXACTO: la entropia de entrelazamiento de un estado estabilizador
 sobre una biparticion A|B es SIEMPRE un entero (en unidades de log 2) --
-nunca irracional, nunca aproximado. Formula (Fattal, Cubitt, Kitaev, Mor,
-Vishwanath, "Entanglement in the stabilizer formalism", 2004):
+nunca irracional, nunca aproximado. Formula (Fattal, Cubitt, Yamamoto, Bravyi,
+Chuang, "Entanglement in the stabilizer formalism", 2004, arXiv:quant-ph/0406168):
 
     S_A = rango_GF(2)(M_A) - |A|
 
