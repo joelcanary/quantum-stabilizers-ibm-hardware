@@ -87,7 +87,7 @@ public-data model predicts that.
   the floating-point oracle.
 * Code distance is a combinatorial quantity; the exhaustive search returns it exactly (cost
   grows like `C(n,d)·3^d`, so it is for small codes). Verified on three published codes.
-* Neither fact is new — both are standard (Gottesman 1997; Fattal et al. 2004). What is
+* Neither fact is new — both are standard ([Gottesman 1997](https://arxiv.org/abs/quant-ph/9705052); [Fattal et al. 2004](https://arxiv.org/abs/quant-ph/0406168)). What is
   offered is a clean, dependency-light, **exact** implementation with its verification, and
   the habit of stating which numbers are exact and which are measured.
 
